@@ -30,7 +30,7 @@ public class ActorsController : Controller
             _service = service;
         }
 
-        // GET: Actor
+        // GET: Actors
         [HttpGet]
         public IActionResult Index()
         {
@@ -38,7 +38,7 @@ public class ActorsController : Controller
             return View(actors);
         }
 
-        // GET: Actor/Details/5
+        // GET: Actors/Details/5
         [HttpGet]
         public IActionResult Details(int? id)
         {
@@ -51,7 +51,7 @@ public class ActorsController : Controller
             return View(viewModel);
         }
         
-        // GET: Actor/Create
+        // GET: Actors/Create
         [HttpGet]
         public IActionResult Create()
         {
@@ -73,7 +73,7 @@ public class ActorsController : Controller
         }
         
         [HttpGet]
-        // GET: Actor/Edit/5
+        // GET: Actors/Edit/5
         public IActionResult Edit(int? id)
         {
             if (id == null) return NotFound();
@@ -85,7 +85,7 @@ public class ActorsController : Controller
             return View(editModel);
         }
 
-        // POST: Actor/Edit/5
+        // POST: Actors/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -103,7 +103,7 @@ public class ActorsController : Controller
         }
         
         [HttpGet]
-        // GET: Actor/Delete/5
+        // GET: Actors/Delete/5
         public IActionResult Delete(int? id)
         {
             if (id == null) return NotFound();
@@ -115,7 +115,7 @@ public class ActorsController : Controller
             return View(deleteModel);
         }
         
-        // POST: Actor/Delete/5
+        // POST: Actors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
