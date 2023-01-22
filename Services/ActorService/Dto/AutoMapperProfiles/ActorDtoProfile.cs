@@ -10,5 +10,8 @@ public class ActorDtoProfile : Profile
     {
         CreateMap<Actor,ActorDto>().ReverseMap();
         CreateMap<ActorDto, ActorViewModel>();
+        CreateMap<ActorDto, DeleteActorViewModel>();
+        CreateMap<ActorDto, EditActorViewModel>();
+        CreateMap<ActorDto, InputActorViewModel>();
     }
 }
